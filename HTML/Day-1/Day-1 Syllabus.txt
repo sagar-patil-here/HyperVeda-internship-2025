@@ -1,0 +1,125 @@
+Introduction to Web Development
+HTML, CSS, JavaScript
+Front-end and Back-end, DB
+Responsive Design
+Web Security
+Deployment and Hosting
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Basically What is HTML?
+
+
+HTML
+HTML stands for HyperText Markup Language. It is the standard markup language used to create web pages. HTML is used to structure and present content on the web. It includes elements such as headings, paragraphs, links, images, lists, and more. HTML is the foundation of web development and is used to create the structure and content of web pages.
+
+
+HTML Elements
+HTML elements are the building blocks of web 
+
+Real-world use of HTML (website skeleton)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Structure of HTML
+
+
+<!DOCTYPE html>
+<html>  
+
+<head>
+  <title>My First Page</title>
+</head>
+
+<body>
+  Hello World!
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+Tags in html 
+
+Headings: <h1> to <h6>
+Paragraphs: <p>
+Formatting: <b>, <i>, <u>, <strong>, <em>, <mark>, <small>
+Line break: <br> 
+Horizontal rule: <hr>
+
+
+
+
+Meta tags are invisible tags inside the <head> of an HTML page.
+They provide metadata (information about the webpage) to browsers, search engines, and social media.
+
+
+<meta charset="UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+
+<meta name="description" content="Short summary of page">	
+
+<meta name="keywords" content="html, css, web">	
+
+<meta name="author" content="Sagar">	
+
+<meta http-equiv="refresh" content="5">	
+
+
+
+Comments and Structure in HTML 
+
+syntax (<!-- -->)
+tag nesting and indentation
+self-closing tags
+
+
+
+
+
+
+
+
+Practice :
+
+
+Make your introduction page 
+
+Heading with your name
+Paragraph about you
+Format some words (bold, italic, underline)
+Use <hr> and <br>

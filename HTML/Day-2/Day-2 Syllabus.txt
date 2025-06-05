@@ -1,0 +1,255 @@
+ HTML Links 
+
+ Anchor tag (<a>)
+< a href = "https://www.google.com" > Google < /a>
+
+| Attribute         | Description                |
+| ----------------- | -------------------------- |
+| `href`            | URL of the page or file    |
+| `target="_blank"` | Opens link in new tab      |
+| `download`        | Downloads the file         |
+| `mailto:`         | Opens default email client |
+| `tel:`            | Opens phone dialer         |
+| `id`              | Unique identifier          |
+| `class`           | CSS class for styling
+
+<a href="file_path">About</a>
+<a href="mailto:sagar@gmail.com">Email Sagar</a>
+<a href="resume.pdf" download>Download My Resume</a>
+<a href="https://youtube.com" target="_blank">Go to YouTube</a>
+<a href="tel:+91234567890">Call Me</a>
+
+
+
+--------------------------------------------------------------------------------------------
+
+
+
+
+
+
+HTML Lists
+Lists are used to group related content.
+
+🔸 Unordered List (<ul>)
+Bulleted list
+
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
+
+
+
+Style	                  Bullet Type
+
+disc (default)            	●
+circle	                    ○
+square	                    ■
+none	                    No bullet
+
+
+
+Nested Unordered List (Sub-list)
+
+<ul>
+  <li>Frontend
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ul>
+  </li>
+  <li>Backend</li>
+</ul>
+
+
+
+
+
+
+🔸 Ordered List (<ol>)
+
+An ordered list displays items in a numbered sequence — showing priority, rank, or step-by-step instructions.
+
+
+<ol>  
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ol>
+
+
+
+
+<ol type="A">
+  <li>Apple</li>
+  <li>Banana</li>
+</ol>
+
+
+
+
+| Type | Output            |
+| ---- | ----------------- |
+| `1`  | 1, 2, 3 (default) |   
+| `A`  | A, B, C           |
+| `a`  | a, b, c           |
+| `I`  | I, II, III        |
+| `i`  | i, ii, iii        |
+
+
+Strat Attribute `start="n"` to begin numbering from `n` instead of 1.
+<ol start="5">
+  <li>Item 5</li>
+  <li>Item 6</li>
+
+
+  Nested Ordered List (Sub-list)
+<ol>
+  <li>Frontend
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ol>
+  </li>
+  <li>Backend</li>
+
+--------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HTML Images 
+
+The <img> tag is used to display images on a web page.
+It’s a self-closing tag — doesn’t require a closing </img>.
+
+<img src="image.jpg" alt="Description of image" width="300" height="200">
+
+
+
+| Attribute | Description                          |
+| --------- | ------------------------------------ |
+| `src`     | Path to the image file               |
+| `alt`     | Alternative text for accessibility   |  
+| `width`   | Width of the image in pixels         |
+| `height`  | Height of the image in pixels        |
+| `title`   | Tooltip text when hovering over image |
+
+
+
+example:
+<img src="sagar.jpg" alt="Sagar Profile" width="200" height="200" title="Sagar's Photo">
+
+
+
+Relative vs Absolute Paths
+---------------------------
+Relative Path (file is in your project folder):
+
+<img src="images/logo.png" alt="Logo">
+
+
+Absolute Path (from the internet):
+
+<img src="https://example.com/logo.png" alt="Logo">
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+HTML Tables
+
+HTML Tables
+Tables organize data in rows and columns.
+
+🔸 Basic Structure:
+
+<table border="1" cellpadding="10" cellspacing="0">
+      <tr>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>Marks</th>
+      </tr>
+      <tr>
+        <td>Sagar</td>
+        <td>101</td>
+        <td>95</td>
+      </tr>
+    </table>
+
+
+
+
+| Element | Description                |
+| ------- | -------------------------- |
+| `<table>` | Starts the table           |
+| `<tr>`    | Table row                  |
+| `<th>`    | Header cell (bold)         |
+| `<td>`    | Data cell                  | 
+
+
+
+
+🔸 Extra Feature:
+colspan: Merge columns
+
+rowspan: Merge rows
+
+<td colspan="2">Merged Cell</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ practice Work :
+
+
+ Create a simple webpage for your portfolio with the following steps:
+
+
+Add a main heading: "(Your Name) Tech Profile".
+
+Insert your profile image using <img> with alt and width.
+
+Write a short intro paragraph below the image.
+
+Create an unordered list of 3 favorite learning websites.
+
+Convert each list item into a clickable <a> link (open in new tab).
+
+Create an ordered list showing your learning journey (HTML ,CSS,JS etc).
+
+Build a table with headers: Skill | Level | Use
+
+Fill the table with at least 3 skills and level (beginner,intermidiate,adv) and use.
+
+Add a mail link using mailto: for contact.
+
+Add a download link for your resume or any PDF file.
+
