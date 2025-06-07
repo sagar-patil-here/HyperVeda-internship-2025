@@ -1,0 +1,172 @@
+Day 3: Forms + Semantic + Media 
+
+
+Forms: <form>, <input>, <label>, <textarea>, <select>, <option>, <button>
+
+
+A form collects input from users (e.g., login, signup, feedback).
+
+
+
+Basic Form Structure:
+
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+  <button type="submit">Submit</button>
+</form>
+
+// | -------- | -------------------------- |
+// | `<form>`  | Container for form elements |
+// | `<input>` | Input field for user data   |
+// | `<label>` | Label for input field       |
+// | `<textarea>` | Multi-line text input     |
+// | `<select>` | Dropdown menu              |
+// | `<option>` | Option in dropdown menu    |
+// | `<button>` | Button to submit form      |
+
+
+
+<input type="text">
+<input type="email">
+<input type="password">
+<input type="checkbox">
+<input type="radio">
+<input type="file">
+<input type="submit">
+
+
+
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email">
+
+Textarea:
+For multi-line input:
+
+<textarea name="message" rows="4" cols="30"></textarea>
+
+
+
+
+<select name="language">
+  <option value="html">HTML</option>
+  <option value="css">CSS</option>
+  <option value="js">JavaScript</option>
+</select>
+
+
+
+
+
+
+
+<button type="submit">Send</button>
+
+-----------------------------------------------------------------------------------------------
+
+
+
+
+
+
+2. Semantic HTML Tags 
+
+
+Semantic tags describe the meaning of content, improving SEO and readability.
+
+Examples of Semantic Tags:
+
+<header>   <!-- Header section -->
+<nav>      <!-- Navigation links -->        
+<main>     <!-- Main content area -->
+<article>  <!-- Independent content piece -->
+<section>  <!-- Thematic grouping of content -->
+<aside>    <!-- Related content (sidebar) -->
+<footer>   <!-- Footer section -->
+
+
+
+
+
+
+Example of Semantic HTML:
+
+<header>
+  <h1>My Website</h1>
+</header>
+<nav>
+  <a href="#">Home</a> | <a href="#">About</a>
+</nav>
+<main>
+  <section>
+    <h2>Welcome</h2>
+    <p>This is a semantic layout example.</p>
+  </section>
+</main>
+<footer>
+  <p>© 2025 Sagar Patil</p>
+</footer>
+
+
+
+-----------------------------------------------------------------------------------------------
+3. Media Elements
+Media elements allow embedding audio and video content.
+
+
+For Audio :
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+
+
+For Video :
+
+<video width="320" height="240" controls>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+
+
+
+Embed Links to YouTube or other platforms:
+
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/VIDEO_ID" 
+title="YouTube video player" 
+frameborder="0" allowfullscreen></iframe>
+-----------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+practice exercises:
+
+Create a mini web page using everything covered:
+
+🛠️ Structure:
+Header – Page title
+
+Navigation Bar – Use <nav> with 2–3 links
+
+Main Section:
+One <section> with a form:
+Name (text), Email (email)
+Feedback (textarea)
+Select topic
+Submit button
+Media Embed:
+Add a YouTube video or local <audio>
+Footer – Contact info or credits
+

@@ -75,7 +75,7 @@ Tags in html
 
 Headings: <h1> to <h6>
 Paragraphs: <p>
-Formatting: <b>, <i>, <u>, <strong>, <em>, <mark>, <small>
+Formatting: <b>, <i>, <u>, <strong> 
 Line break: <br> 
 Horizontal rule: <hr>
 
@@ -91,7 +91,7 @@ They provide metadata (information about the webpage) to browsers, search engine
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">	
 
-<meta name="description" content="Short summary of page">	
+<meta name="description" content="Short summary of page">
 
 <meta name="keywords" content="html, css, web">	
 
