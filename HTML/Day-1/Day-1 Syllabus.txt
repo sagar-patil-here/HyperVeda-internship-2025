@@ -123,3 +123,12 @@ Heading with your name
 Paragraph about you
 Format some words (bold, italic, underline)
 Use <hr> and <br>
+
+
+
+
+
+
+In case you are absent You can accesss recorded lecture here:
+
+https://www.youtube.com/playlist?list=PLOmQ_sYR55DzOYS2N6MQZbuj5PUs-SCCv
