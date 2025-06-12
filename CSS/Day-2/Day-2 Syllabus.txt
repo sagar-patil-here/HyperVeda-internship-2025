@@ -1,0 +1,236 @@
+Day 2: Text + Box Model + Borders + Backgrounds 
+
+---
+
+ Objective:
+
+Learn how to style and organize content using text properties, box model concepts, borders, and backgrounds.
+
+---
+
+1. Text Properties
+
+These CSS properties allow you to style the appearance of text.
+
+🔹 `color`
+
+Sets the color of the text.
+
+```css
+p {
+  color: #333;
+}
+```
+
+🔹 `font-size`
+
+Controls the size of the text.
+
+```css
+h1 {
+  font-size: 32px;
+}
+```
+
+🔹 `font-family`
+
+Sets the font style.
+
+```css
+body {
+  font-family: 'Arial', sans-serif;
+}
+```
+
+ 🔹 `text-align`
+
+Aligns the text (left, right, center, justify).
+
+```css
+p {
+  text-align: center;
+}
+```
+
+🔹 `line-height`
+
+Controls the vertical spacing between lines of text.
+
+```css
+p {
+  line-height: 1.6;
+}
+```
+
+ 🔹 `letter-spacing`
+
+Adjusts space between letters.
+
+```css
+h2 {
+  letter-spacing: 2px;
+}
+```
+
+---
+
+ ✅ 2. The CSS Box Model
+
+Every HTML element is a box made up of four layers:
+
+🔹 Layers:
+
+1. **Content** – The actual text or element
+2. **Padding** – Space between content and border
+3. **Border** – The edge surrounding padding
+4. **Margin** – Space outside the border (between elements)
+
+🔸 Example:
+
+```css
+.card {
+  margin: 20px;
+  padding: 15px;
+  border: 2px solid black;
+}
+```
+
+This helps control spacing and layout clearly.
+
+---
+
+ ✅ 3. Borders
+
+Borders wrap around elements and can be customized.
+
+🔹 `border-style`, `border-width`, `border-color`
+
+```css
+.box {
+  border: 2px dashed red;
+}
+```
+
+ 🔹 `border-radius`
+
+Rounds the corners of the border.
+
+```css
+.card {
+  border-radius: 10px;
+}
+```
+
+
+
+Border Style :
+
+dotted - Defines a dotted border
+dashed - Defines a dashed border
+solid - Defines a solid border
+double - Defines a double border
+groove - Defines a 3D grooved border. The effect depends on the border-color value
+ridge - Defines a 3D ridged border. The effect depends on the border-color value
+inset - Defines a 3D inset border. The effect depends on the border-color value
+outset - Defines a 3D outset border. The effect depends on the border-color value
+none - Defines no border
+hidden - Defines a hidden border
+
+
+---
+
+ ✅ 4. Backgrounds
+
+CSS allows you to add color or images behind elements.
+
+🔹 `background-color`
+
+Fills the background with a solid color.
+
+```css
+body {
+  background-color: #f8f9fa;
+}
+```
+
+🔹 `background-image`
+
+Applies an image as the background.
+
+```css
+.hero {
+  background-image: url('banner.jpg');
+}
+```
+
+ 🔹 `background-size`
+
+Controls the scaling of the background image.
+
+```css
+.hero {
+  background-size: cover;
+}
+```
+
+🔹 `background-repeat`
+
+Prevents the image from repeating.
+
+```css
+.hero {
+  background-repeat: no-repeat;
+}
+```
+
+🔹 `background-position`
+
+Positions the image (center, top, bottom, etc.).
+
+```css
+.hero {
+  background-position: center;
+}
+```
+
+---
+
+🧪 Practice Task:
+
+**Design a styled card using everything above.**
+
+💻 HTML:
+
+```html
+<div class="card">
+  <h2>CSS Practice Card</h2>
+  <p>This card demonstrates text styling, spacing, and background features.</p>
+</div>
+```
+
+🎨 CSS:
+
+```css
+.card {
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 30px auto;
+  width: 300px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+body {
+  background-image: url('pattern.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #333;
+}
+```
+
+

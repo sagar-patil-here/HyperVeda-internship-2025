@@ -126,13 +126,39 @@ For Audio :
 
 For Video :
 
-<video width="320" height="240" controls>
-  <source src="video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
+
+basic syntax for embedding video:
+
+<video src="movie.mp4" controls poster=""></video>
+
+
+
+
+For multiple formats:
+
+<video controls width="500">
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  <source src="movie.webm" type="video/webm">
+  Your browser does not support HTML5 video.
 </video>
 
 
 
+With thumbnail image:
+
+<video controls poster="thumbnail.jpg">
+  <source src="movie.mp4" type="video/mp4">
+</video>
+
+
+Extra attributes for video:
+
+<video autoplay muted loop>
+  <source src="movie.mp4" type="video/mp4">
+</video>
+
+Tip : ⚠️ Modern browsers block autoplay unless the video is muted.
 
 
 Embed Links to YouTube or other platforms:
@@ -142,6 +168,91 @@ src="https://www.youtube.com/embed/VIDEO_ID"
 title="YouTube video player" 
 frameborder="0" allowfullscreen></iframe>
 -----------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+Some Additional Entities :
+
+
+1. HTML Entities
+
+Used to display reserved characters (like <, >, &) as text.
+
+&lt;  <!-- less than -->
+&gt;  <!-- greater than -->
+&amp; <!-- ampersand -->
+&copy; <!-- copyright symbol -->
+
+These ensure your code symbols don’t break the HTML.
+
+
+
+
+2. <fieldset> and <legend>
+
+Helps group form fields together with a caption for better visual grouping.
+
+<fieldset>
+  <legend>Contact Info</legend>
+  <label>Name:</label>
+  <input type="text">
+</fieldset>
+
+Great for organizing large forms.
+
+
+
+
+
+HTML5 Input Types
+
+Modern form input types for better user interaction:
+
+<input type="date">
+<input type="color">
+<input type="range">
+<input type="tel">
+
+HTML is maintained and updated by an organization called WHATWG (Web Hypertext Application Technology Working Group).
+Website: https://whatwg.org
+These enhance the form experience with built-in UI support.
+
+
+5. Optional but Better UX: Use placeholder and required
+
+<input type="email" id="email" placeholder="example@gmail.com" required>
+
+6. Clean Code & Comments
+
+Use comments to keep your HTML organized:
+
+<!-- This is a comment -->
+
+Always indent nested tags for readability.
+
+7. Basic SEO Meta Tags
+
+Help your webpage appear better in search results:
+
+<meta name="description" content="A beginner HTML page">
+<meta name="keywords" content="HTML, beginner, web development">
+
+These are added inside the <head> tag and improve discoverability.
+
+
+
+
+
+
+
+
+
+
+
 
 
 

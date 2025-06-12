@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+  
+   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Day 3</title>
-</head>
-<body>
+  </head>
+  <body>
     <form>
+      <br />
+      <fieldset>
+        <legend>Info</legend>
         <label for="nam">Name:</label>
-        <input type="text" name="nam">
-        <input type="submit" value="Give feedback"><br>
-       <label for="address">Address</label> <textarea name="address" id=""></textarea>
-       <br>
-
-      <Label for="Languages">Select Language</Label>  
-      <select name="Languages">
-        <option value="html">HTML</option>
-        <option value="CSS">CSS</option>
-        <option value="JS">Js</option>
-      </select>
-      <br>
-      <label for="">Gmail</label>
-      <input type="email">
-      <br>
-      <label for="">upload :</label>
-      <input type="file">
+        <input type="text" name="nam" placeholder="Enter your name here"/>
+        <input type="submit" value="Give feedback" /><br />
+        <label for="address">Address</label>
+        <textarea name="address" id=""></textarea>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Q&A</legend>
+        <label for="Languages">Select Language</label>
+        <select id="Languages">
+          <option value="html">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="JS">Js</option>
+        </select>
+        <br />
+        <label for="">Gmail</label>
+        <input type="email" />
+        <br />
+        <label for="">upload :</label>
+        <input type="file" /><br>
+        <input type="date" /><br>
+        <input type="color" /><br>
+        <input type="range" />
+      </fieldset>
+      <fieldset>
+      <legend>Login</legend>
+      <input type="text" placeholder="Username" required><br><br>
+      <input type="password" placeholder="password" required>
       
-<button>Submit</button>
-
-
+     </fieldset>
+      <button>Submit</button>
     </form>
-</body>
+
+    <audio src="flute.mp3" controls></audio>
+
+    <br />
+    <!-- 
+    <video width="200" src="sample.mp4"  controls poster="sample.png" autoplay loop muted></video> -->
+    <br />
+    <h3>3&copy;2</h3>
+
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/enntMV05MSk?si=MJxLhitE9Yf99OO5" title="YouTube video player" frameborder="100" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+     
+  </body>
 </html>

@@ -1,0 +1,39 @@
+*{
+    background-color: #1f1f1f;
+    color: white;
+} 
+ 
+ h2{
+    color: blueviolet;
+ }
+ 
+div{
+    
+}
+p{
+    color: aquamarine;
+}
+
+/* class selector  */
+
+/* .heading{
+    color:green;
+} */
+
+/* id selector  */
+
+/* #desg{
+    color: red;
+}
+ */
+
+
+ /* div p{
+    color:rosybrown
+ } */
+
+
+
+ h1,h2,p{
+    color: black;
+ }

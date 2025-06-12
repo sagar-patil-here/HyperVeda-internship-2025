@@ -1,0 +1,240 @@
+Day 1: CSS Foundations + Selectors 
+
+---
+
+Objective:
+
+Understand what CSS is, how it works, and how to use selectors to style HTML elements confidently.
+
+---
+
+ 1. What is CSS?
+
+CSS (Cascading Style Sheets) is a language used to style the visual presentation of HTML content. It controls colors, layouts, fonts, spacing, and much more.
+
+> Without CSS, websites would be plain and unstyled — just black text on a white background.
+
+---
+
+ 2. Types of CSS
+
+There are three main ways to apply CSS:
+
+🔹 Inline CSS
+
+Written inside an HTML element’s `style` attribute. Used for quick styling.
+
+
+<h1 style="color: red;">Hello</h1>
+
+
+🔹 Internal CSS
+
+Written inside a `<style>` tag in the `<head>` section.
+
+<style>
+  h1 {
+    color: blue;
+  }
+</style>
+
+
+🔹 External CSS (Recommended)
+
+Written in a separate `.css` file and linked to HTML using `<link>`.
+
+
+<!-- index.html -->
+<link rel="stylesheet" href="styles.css">
+
+/* styles.css */
+h1 {
+  color: green;
+}
+
+
+> 💡 External CSS is best for organizing code and reusing styles across pages.
+
+---
+
+ 3. CSS Syntax
+
+Every CSS rule has a selector and a declaration block:
+
+
+selector {
+  property: value;
+}
+
+ Example:
+
+
+p {
+  color: purple;
+  font-size: 16px;
+}
+
+
+This sets all `<p>` tags to purple with 16px font size.
+
+---
+
+ 4. Basic Selectors
+
+🔹 Universal Selector `*`
+
+Applies style to **every** element on the page.
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+🔹 Element Selector
+
+Targets all instances of a specific HTML tag.
+
+
+h1 {
+  color: orange;
+}
+
+
+🔹 Class Selector `.class`
+
+Targets elements with a specific class.
+
+
+<p class="intro">Welcome</p>
+
+
+
+.intro {
+  color: blue;
+}
+
+
+🔹 ID Selector `#id`
+
+Targets one unique element with an ID.
+
+
+<h2 id="main-title">Title</h2>
+
+
+
+#main-title {
+  font-size: 24px;
+}
+
+
+🔹 Group Selector
+
+Style multiple tags with the same rule.
+
+
+h1, h2, p {
+  font-family: Arial;
+}
+
+
+🔹 Descendant Selector
+
+Targets elements nested inside others.
+
+
+div p {
+  color: gray;
+}
+
+
+This targets `<p>` tags only inside `<div>`.
+
+---
+
+ ✅ 5. CSS Comments
+
+Comments explain code and are ignored by browsers.
+
+
+/* This is a CSS comment */
+
+
+---
+
+💡 Tips:
+
+* Always prefer **external CSS** for real projects.
+* Use **meaningful class names** like `.hero-title` instead of `.x1`.
+* Organize CSS rules logically and comment sections.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 🧪 Practice Task:
+
+Create a profile card using all types of selectors.
+
+#### 💻 HTML:
+
+```html
+<div class="card">
+  <h2 id="name">Sagar Patil</h2>
+  <p class="role">Frontend Developer</p>
+</div>
+```
+
+#### 🎨 CSS:
+
+```css
+/* Universal */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Class Selector */
+.card {
+  background: #f0f0f0;
+  padding: 20px;
+  width: 250px;
+}
+
+/* ID Selector */
+#name {
+  color: #007acc;
+  font-size: 20px;
+}
+
+/* Element Selector */
+p {
+  color: #555;
+  font-size: 14px;
+}
+```
+
+This covers all selectors in a practical context.
