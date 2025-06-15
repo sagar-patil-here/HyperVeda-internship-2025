@@ -27,7 +27,7 @@ Here you'll find everything you need to follow along, revise, and grow.
 All Recordigs Are Available YouTube :
 
 HTML 👉
-https://www.youtube.com/playlist?list=PLOmQ_sYR55DzOYS2N6MQZbuj5PUs-
+https://www.youtube.com/playlist?list=PLOmQ_sYR55DzOYS2N6MQZbuj5PUs-SCCv
 
 
 CSS 👉
