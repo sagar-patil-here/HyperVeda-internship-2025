@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Day-4 Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            height: 80vh;
+            background-color: lightgray;
+            margin: 5%;
+            border: 1px solid black;
+            padding: 2%;
+            display: flex;
+            /* flex-direction: column; */
+            /* justify-content: center; */
+            align-items: start;
+            /* flex-wrap: wrap; */
+            gap: 30px;
+            
+        }
+        .child{
+            height: 50px;
+            width: 100px;
+            background-color: red;
+            /* margin: 20px; */
+            
+        }
+        #ele-1{
+            /* flex-shrink: 2; */
+            /* order: 2; */
+        }
+        #ele-2{
+            /* order: 1; */
+        }
+        @media (max-width : 500px) {
+
+            
+
+            .parent{
+                flex-wrap: wrap;
+                background-color: crimson;
+                
+            }
+            .child{
+                background-color: greenyellow;
+                font-size: 30px;
+            }
+
+        }
+          @media (max-width : 55px){
+            .parent{
+                display: none;
+            }
+          }
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+
+        <div class="child" id="ele-1">ele-1</div>
+        <div class="child" id="ele-2">ele-2</div>
+        <div class="child">ele-3</div>
+        <div class="child">ele-4</div>
+        <div class="child">ele-5</div>
+         <div class="child">ele-1</div>
+        <div class="child">ele-2</div>
+        <div class="child">ele-3</div>
+        <div class="child">ele-4</div>
+        <div class="child">ele-5</div>
+        
+
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+Day 4 – Flexbox + Media Queries 
+
+Objective: Make layouts responsive and modern with less effort.
+
+Topics:
+
+1. Flexbox Container Properties
+
+* display: flex
+  Description: Turns a container into a flex container.
+  Syntax:
+  .container {
+  display: flex;
+  }
+
+* justify-content
+  Description: Aligns items horizontally.
+  Options: flex-start, center, space-between, space-around, space-evenly
+  Example:
+  .container {
+  justify-content: center;
+  }
+
+* align-items
+  Description: Aligns items vertically.
+  Options: flex-start, center, stretch, baseline, flex-end
+  Example:
+  .container {
+  align-items: center;
+  }
+
+* gap
+  Description: Adds space between flex items.
+  Example:
+  .container {
+  gap: 20px;
+  }
+
+2. Flex Direction and Wrapping
+
+* flex-direction
+  Description: Sets the direction of the main axis.
+  Values: row, column, row-reverse, column-reverse
+  Example:
+  .container {
+  flex-direction: column;
+  }
+
+* flex-wrap
+  Description: Allows items to wrap onto multiple lines.
+  Values: nowrap, wrap, wrap-reverse
+  Example:
+  .container {
+  flex-wrap: wrap;
+  }
+
+3. Flex Item Properties
+
+* flex-grow
+  Description: Defines the ability for a flex item to grow.
+  Example:
+  .item {
+  flex-grow: 1;
+  }
+
+* flex-shrink
+  Description: Defines the ability for a flex item to shrink.
+  Example:
+  .item {
+  flex-shrink: 1;
+  }
+
+* order
+  Description: Changes the visual order of items.
+  Example:
+  .item {
+  order: 2;
+  }
+
+4. Responsive Design
+
+* Mobile-first approach
+  Description: Start styling for smaller screens first, then adjust for larger screens using media queries.
+
+* Media Queries
+  Description: Apply CSS rules based on screen size or device characteristics.
+  Syntax:
+  @media (max-width: 768px) {
+  .container {
+  flex-direction: column;
+  }
+  }
+
+* Common Breakpoints
+  Mobile: max-width: 480px
+  Tablet: max-width: 768px
+  Desktop: min-width: 1024px
+
+Tips:
+
+* Master Flexbox before learning CSS Grid.
+* Use rem and % for responsive units.
+* Use media queries to adjust layout for different screen sizes.
+
+Practice Task:
+Build a responsive pricing table or service cards layout using Flexbox and media queries.

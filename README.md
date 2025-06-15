@@ -24,8 +24,16 @@ Here you'll find everything you need to follow along, revise, and grow.
 
 ## 🎥 Recordings
 
-All Recordigs Are Available At 👉 [Click here](https://www.youtube.com/@HyperVedaEdtech/playlists)
+All Recordigs Are Available YouTube :
 
+HTML 👇🏻
+
+https://www.youtube.com/playlist?list=PLOmQ_sYR55DzOYS2N6MQZbuj5PUs-
+
+
+CSS 👇🏻
+
+https://www.youtube.com/playlist?list=PLOmQ_sYR55DykHYpPnR76YwUMVCPuIGKZ
 ---
 
 ## 🙌 Contribution Guidelines
