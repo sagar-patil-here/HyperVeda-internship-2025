@@ -26,11 +26,11 @@ Here you'll find everything you need to follow along, revise, and grow.
 
 All Recordigs Are Available YouTube :
 
-HTML 👇🏻
+HTML 👉
 https://www.youtube.com/playlist?list=PLOmQ_sYR55DzOYS2N6MQZbuj5PUs-
 
 
-CSS 👇🏻
+CSS 👉
 https://www.youtube.com/playlist?list=PLOmQ_sYR55DykHYpPnR76YwUMVCPuIGKZ
 
 ---
