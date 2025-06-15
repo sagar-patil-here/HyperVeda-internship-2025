@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Day-3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body,html{
+            font-size: 50px;
+        }
+        .block{
+            border: 2px solid black;
+            background-color: blanchedalmond;
+            display: block;
+            margin: 10px;
+            padding:20px;
+            
+        }
+        .inline{
+            border: 2px solid black;
+            background-color: blanchedalmond;
+            display: inline;
+            margin: 10px;
+            padding:20px;
+            /* height width will not apply here because of inline display property */
+            height: 500px;
+            width: 500px;
+        }
+        .ib{
+            border: 2px solid black;
+            background-color: blanchedalmond;
+            display: inline-block;
+            margin: 10px;
+            padding:20px;
+            
+           
+        }
+        .n{
+          border: 2px solid black;
+            background-color: blanchedalmond;
+            display: none;
+            margin: 10px;
+            padding:20px;
+        }
+        span{
+             border: 2px solid black;
+            background-color: blanchedalmond;
+            margin: 10px;
+            padding:20px;
+        }
+        .pos{
+            border: 2px solid black;
+            height: 1000px;
+            margin: 45px;
+            /* padding: 50px; */
+            position: relative;
+            font-size: 50px;
+            
+        }
+        .card{
+           border: 1px solid black;
+           margin: 10px;
+           height: 25%;
+           width: 50%;
+        }
+        #c1{
+            background-color: aqua;
+            /* position: absolute; */
+            /* position: sticky; */
+            /* top:100px;
+            left: 0; */
+            /* font-size: 50px; */
+            /* width: 100%; */
+            font-size: 2rem;
+            
+        }
+          #c2{
+            background-color: rgb(179, 0, 255);
+            font-size: 50px;
+
+        }
+          #c3{
+            background-color: rgb(137, 184, 83);
+            position: sticky;
+            bottom:20px;
+            left: 0;
+            font-size: 50px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <!-- display : block -->
+     <h1 class="block">Block display property applied</h1>
+
+        <!-- display : inline -->
+    <div class="inline">This is inline element can't support height and with property</div>
+
+    <!-- display : inline-block  -->
+    <h1 class="ib">This is h1</h1>
+    <h1 class="ib">this is again h1</h1>
+
+    <!-- display : none -->
+
+    <div class="n">This is hidden</div>
+
+
+
+     <span>This is span</span> <!--default display is inline in html -->
+
+<div class="pos">
+
+    <div class="card" id="c1">Card1</div>
+    <div class="card" id="c2">Card2</div>
+    <div class="card" id="c3">Card3</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

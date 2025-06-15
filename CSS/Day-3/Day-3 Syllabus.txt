@@ -1,0 +1,231 @@
+Day 3: Layout with Display, Positioning, and Units
+
+Objective: Learn how HTML elements behave in a layout using display properties, positioning rules, and unit types. This forms the base of all webpage layouts.
+
+Display Types
+
+The display property controls how an element behaves in the document layout.
+
+👉block:
+
+Takes up the full width
+
+Starts on a new line
+
+div {
+  display: block;
+}
+
+👉inline:
+
+Takes only as much width as content
+
+Does not allow width, height, or margin-top/bottom
+
+
+span {
+  display: inline;
+}
+
+
+👉inline-block:
+
+Behaves like inline but allows width and height
+
+
+
+.button {
+  display: inline-block;
+  padding: 10px;
+}
+
+
+👉none:
+
+Completely hides the element from the layout
+
+
+.hidden {
+  display: none;
+}
+
+
+Positioning
+
+The position property controls how elements are placed on the page.
+
+👉static (default):
+Normal flow (no special positioning)
+
+
+div {
+  position: static;
+}
+
+
+👉relative:
+Positioned relative to its normal position
+
+
+.box {
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+
+👉absolute:
+Positioned relative to the nearest relative/absolute/fixed parent
+
+
+.popup {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+👉fixed:
+Positioned relative to the browser window; stays in place during scroll
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+👉sticky:
+Sticks to a position while scrolling within its container
+
+
+.sticky-note {
+  position: sticky;
+  top: 50px;
+}
+
+
+
+| Position Type | Stays in Normal Flow?   | Moves Relative To                       | Scroll Behavior          | Use Case Example                 |
+| ------------- | ----------------------- | --------------------------------------- | ------------------------ | -------------------------------- |
+| `static`      | ✅ Yes (default)         | —                                       | Scrolls normally         | Normal elements, default layout  |
+| `relative`    | ✅ Yes                   | Its original place                      | Scrolls normally         | Slight adjustment of placement   |
+| `absolute`    | ❌ No                    | Nearest positioned ancestor or `<html>` | Stays fixed to parent    | Popups, tooltips                 |
+| `fixed`       | ❌ No                    | Browser viewport                        | ❌ Does not scroll        | Sticky navbars, floating buttons |
+| `sticky`      | ✅ Yes (until it sticks) | Nearest scrollable container            | ✅ Sticks while scrolling | Sticky headers, section labels   |
+
+
+
+
+
+👉Z-Index and Overlapping
+
+Defines the stack order of elements. Higher z-index = in front.
+
+
+.box {
+  position: absolute;
+  z-index: 10;
+}
+Note: Only works on positioned elements (relative, absolute, fixed, sticky)
+
+👉CSS Units
+
+Control how sizes are defined in CSS.
+
+Absolute Units:
+
+px – Pixels (fixed size)q
+
+Relative Units:
+
+% – Relative to parent element
+
+em – Relative to the font-size of the parent
+
+rem – Relative to the root font-size
+
+vh – 1% of the viewport height
+
+vw– 1% of the viewport width
+
+Example:
+
+
+.container {
+  width: 80%;
+  padding: 2rem;
+  font-size: 1.2em;
+}
+
+👉Tips:
+
+Use relative for light adjustments and absolute only when needed.
+
+Use rem and % for better responsiveness.
+
+Test display/position with browser dev tools.
+
+👉Practice Task:
+
+Create a layout with:
+
+A fixed header/navbar at the top
+
+A content section with two blocks side by side
+
+A sticky footer at the bottom
+
+HTML:
+
+html
+Copy
+Edit
+<header class="navbar">My Navbar</header>
+<main class="main-content">
+  <div class="left">Left Content</div>
+  <div class="right">Right Content</div>
+</main>
+<footer class="footer">Sticky Footer</footer>
+CSS:
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.main-content {
+  display: flex;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.left, .right {
+  flex: 1;
+  padding: 20px;
+  background: #f4f4f4;
+  margin: 10px;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+This completes Day 3: Layout and Positioning.
+
