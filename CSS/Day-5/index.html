@@ -8,28 +8,38 @@
     body{
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
     }
     h1{
       background-color: rgb(236, 130, 0);
       color: black;
       padding: 20px;
       margin: 20px;
-      width: 30%;
+      width: 100px;
+      height: 100px;
       border: 2px solid black;
-      border-radius: 10px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       position: relative;
       top: 300px ;
       /* transform: rotate(90deg); */
       /* transition: 3s linear; */
       box-shadow: 10px 10px 5px rgba(32, 32, 32, 0.2);
       text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    /* animation: slide 4s linear forwards; */
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
     
     }
      h1:hover{
       /* transform: translate(100px,-100px); */
       /* background-color: aqua; */
       /* opacity: 0; */
+      
     } 
     /* h1:active{
       background-color: red;
@@ -46,10 +56,31 @@
     /* h1:nth-child(3){
       color: crimson;
     } */
+
+    @keyframes slide {
+      0%{
+        transform: translateX(0px);
+      }
+      20%{
+        transform: translate(200px,-300px) ;
+      }
+      40%{
+        transform: translate(400px,0);
+      }
+      60%{
+transform: translate(600px,-300px) ;
+      }
+      100%{
+        transform: translate(800px,0);
+
+      }
+     
+    }
   </style>
 </head>
 <body>
-  <h1>Psudo Classes</h1>
+  <h1>Ball</h1>
+  
   <!-- <h1>CSS</h1>
   <h1>sagar</h1> -->
 
