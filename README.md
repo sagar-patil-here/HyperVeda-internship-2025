@@ -33,6 +33,9 @@ https://www.youtube.com/playlist?list=PLOmQ_sYR55DzOYS2N6MQZbuj5PUs-SCCv
 CSS 👉
 https://www.youtube.com/playlist?list=PLOmQ_sYR55DykHYpPnR76YwUMVCPuIGKZ
 
+Projects 👉
+https://www.youtube.com/playlist?list=PLOmQ_sYR55DyLH4SJhnUmubhqjqN5gdFW
+
 ---
 
 ## 🙌 Contribution Guidelines
