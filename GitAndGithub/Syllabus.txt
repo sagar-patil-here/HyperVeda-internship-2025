@@ -2,6 +2,4 @@ This file is for testing purposes only.
 # Git and GitHub Syllabus
 
 we will pushh this file to GitHub
-this is changes 
 
-this new line which we adding now (#######)
