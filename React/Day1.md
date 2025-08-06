@@ -16,6 +16,7 @@ It enables **component-based architecture** and allows dynamic rendering with **
 ## ⚙️ Vite Setup
 
 ### ✅ Step-by-step:
+#1. Download Node.js From => https://nodejs.org/en/download
 ```bash
 npm create vite@latest my-app
 cd my-app
