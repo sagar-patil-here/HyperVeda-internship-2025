@@ -1,4 +1,3 @@
-
 # ⚛️ Day 2 – Components, Props & State
 
 ## 🔹 Functional Components
@@ -35,6 +34,33 @@ function Greeting(props) {
 ```
 
 > Props are **read-only**.
+
+---
+
+## 🛠️ What is a Hook?
+
+A **Hook** is a special function in React that lets you “hook into” React features such as **state** and **lifecycle methods** inside functional components.  
+
+- Hooks **start with `use`** (e.g., `useState`, `useEffect`)  
+- They **cannot** be used inside loops, conditions, or nested functions — only at the top level of a component.  
+
+---
+
+## 📌 What is State?
+
+**State** is a built-in object in React components that stores dynamic data and determines how the component behaves or appears.  
+
+- **State changes → UI updates automatically**  
+- Unlike props, **state is managed inside the component**  
+- Used for **interactive features** like counters, form inputs, toggles, etc.  
+
+Example:  
+```jsx
+const [count, setCount] = useState(0);
+```
+Here:
+- `count` → current value of the state  
+- `setCount` → function to update the state  
 
 ---
 
@@ -84,6 +110,8 @@ Events like `onClick`, `onChange`, etc. are written in camelCase.
 
 ### ✅ Requirements:
 - A button to increase the count
+- A button to decrease the count
+- A button to reset the count 
 - Display the count on screen
 
 ### 🧾 Example Output:
