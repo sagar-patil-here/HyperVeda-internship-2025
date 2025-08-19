@@ -9,6 +9,7 @@ const Nav = (props) => {
                 width : '100%',
                 alignItems : 'center',
                 padding : '20px',
+                margin:'30px',
                 display : "flex",
                 backgroundColor : 'red',
                 color : 'black',
