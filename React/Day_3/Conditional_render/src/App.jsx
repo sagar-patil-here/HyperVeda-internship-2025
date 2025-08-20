@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import List from './Components/List';
 import './App.css';
 
 function App() {
@@ -12,8 +13,12 @@ function App() {
         <button onClick={()=>setIsLogged(false)}>Logout..</button></div>
         
       ) : (
-        <button onClick={()=>setIsLogged(true)}>Login..</button>
+        <><h1>You are Logged out !!</h1>
+        <button onClick={()=>setIsLogged(true)}>Login..</button></>
+        
       )}
+
+      <List/>
     </div>
   );
 }

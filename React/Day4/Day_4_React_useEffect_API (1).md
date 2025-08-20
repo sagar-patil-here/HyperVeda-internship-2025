@@ -3,7 +3,7 @@
 
 ## 🔁 useEffect Hook
 
-The `useEffect` hook lets you perform **side effects** in function components.
+The `useEffect` hook lets you perform the task or component at least once in function components.
 
 ### 🔹 Syntax:
 ```jsx
