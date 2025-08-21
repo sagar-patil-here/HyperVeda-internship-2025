@@ -1,136 +1,169 @@
+# Day 6 -- React Router DOM (Advanced)
 
-# Day 6 – React Router DOM
+**Topic:** Using `createBrowserRouter` in React Router v6.4+
+https://reactrouter.com/home
+------------------------------------------------------------------------
 
-## SPA vs MPA
+## 1. What is `createBrowserRouter`?
 
-### SPA (Single Page Application)
-- Loads a single HTML file and dynamically updates content without refreshing the page.
-- Only part of the page updates when navigating, resulting in faster user experience.
-- Uses client-side routing.
-- Example: React apps, Gmail
+-   It is the **new way** to create routes in React Router (introduced
+    in v6.4+).\
+-   Provides a **centralized route configuration** instead of JSX-based
+    `<Routes>`.\
+-   Useful for **data loading, actions, error handling, nested
+    routing**.
 
-**Advantages:**
-- Faster transitions
-- Better user experience
-- Efficient loading (after initial load)
+------------------------------------------------------------------------
 
-**Disadvantages:**
-- Slower initial load
-- SEO challenges (unless handled properly)
+## 2. Syntax of `createBrowserRouter`
 
-### MPA (Multi Page Application)
-- Every new page is loaded from the server.
-- Full-page reloads occur on navigation.
-- Uses traditional server-side routing.
-- Example: E-commerce websites, WordPress
+``` jsx
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-**Advantages:**
-- Better SEO
-- Suitable for large-scale apps
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+    ],
+  },
+]);
 
-**Disadvantages:**
-- Slower navigation
-- More server requests
+function Main() {
+  return <RouterProvider router={router} />;
+}
 
----
-
-## React Router DOM
-
-`react-router-dom` is a standard routing library for React.
-
-### Installation
-```bash
-npm install react-router-dom
+export default Main;
 ```
+=> Navigation using Link
 
-### BrowserRouter
-- Used to wrap the app and enable routing functionality.
-```jsx
-import { BrowserRouter } from "react-router-dom";
+Link is used to navigate without refreshing the page.
 
-<BrowserRouter>
-  <App />
-</BrowserRouter>
-```
+It prevents full page reload and maintains SPA (Single Page Application) behavior.
 
-### Routes & Route
-- Used to define different routes in the application.
-```jsx
-import { Routes, Route } from "react-router-dom";
-
-<Routes>
-  <Route path="/" element={<Home />} />
-  <Route path="/about" element={<About />} />
-  <Route path="/contact" element={<Contact />} />
-</Routes>
-```
-
-### Link
-- Used for navigation instead of `<a>` to prevent page reloads.
-```jsx
 import { Link } from "react-router-dom";
 
-<Link to="/">Home</Link>
-<Link to="/about">About</Link>
-```
-
-### useNavigate
-- A hook for programmatic navigation.
-```jsx
-import { useNavigate } from "react-router-dom";
-
-const navigate = useNavigate();
-navigate("/contact");
-```
-
----
-
-## 👉 Mini Task: 3-Page App
-
-### Objective:
-Create a 3-page React application with navigation links to Home, About, and Contact pages.
-
-### Steps:
-1. Install `react-router-dom`.
-2. Create components: `Home.js`, `About.js`, `Contact.js`.
-3. Setup routing using `BrowserRouter`, `Routes`, and `Route`.
-4. Use `Link` to navigate between pages.
-5. (Optional) Use `useNavigate` in a button to redirect programmatically.
-
-**File Structure:**
-```
-src/
-├── components/
-│   ├── Home.js
-│   ├── About.js
-│   └── Contact.js
-├── App.js
-└── index.js
-```
-
-**App.js Sample:**
-```jsx
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-
-function App() {
+function Navbar() {
   return (
-    <BrowserRouter>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
+    <nav>
+      <Link to="/">Home</Link> | 
+      <Link to="/about">About</Link> | 
+      <Link to="/contact">Contact</Link>
+    </nav>
+  );
+}
+export default Navbar;
+
+
+
+
+
+=> Navigation using NavLink
+
+NavLink works like Link but adds styling to the active route.
+
+Very useful for highlighting which page is currently active.
+
+import { NavLink } from "react-router-dom";
+
+function Navbar() {
+  return (
+    <nav>
+      <NavLink 
+        to="/" 
+        style={({ isActive }) => ({ color: isActive ? "red" : "black" })}
+      >
+        Home
+      </NavLink> | 
+
+      <NavLink 
+        to="/about" 
+        style={({ isActive }) => ({ color: isActive ? "red" : "black" })}
+      >
+        About
+      </NavLink> | 
+
+      <NavLink 
+        to="/contact" 
+        style={({ isActive }) => ({ color: isActive ? "red" : "black" })}
+      >
+        Contact
+      </NavLink>
+    </nav>
   );
 }
 
-export default App;
+export default Navbar;
+
+------------------------------------------------------------------------
+
+## 3. Advantages over BrowserRouter
+
+-   Centralized route definition in **array form**.\
+-   Easy to handle **nested routes**.\
+-   Supports **errorElement** for custom error pages.\
+-   Allows **data APIs (loaders & actions)**.
+
+------------------------------------------------------------------------
+
+
+
+``` jsx
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      { path: "home", element: <Home /> },
+      { path: "services", element: <Services /> },
+      { path: "profile", element: <Profile /> },
+    ],
+  },
+]);
 ```
+
+👉 Here, `<Layout />` is a wrapper component (with header, footer,
+navbar).
+
+------------------------------------------------------------------------
+
+## 4. Error Handling
+
+``` jsx
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,
+  },
+]);
+```
+
+-   If route not found → **ErrorPage** renders.
+
+------------------------------------------------------------------------
+
+## 5. Mini Task -- Create App with Nested Routes
+
+👉 Pages: `Home`, `About`, `Contact`, `ErrorPage`\
+👉 Use `Layout` with **Navbar** and `Outlet` for rendering children.
+
+**Steps:**\
+1. Install React Router DOM → `npm install react-router-dom`\
+2. Create components: `Home.js`, `About.js`, `Contact.js`,
+`ErrorPage.js`, `Layout.js`\
+3. Define router using `createBrowserRouter`.\
+4. Wrap root in `<RouterProvider router={router} />`.\
+5. Add navigation links in `Layout`.
+
+------------------------------------------------------------------------
+
+✅ Now you have a **Day 6 syllabus** with `createBrowserRouter`.
